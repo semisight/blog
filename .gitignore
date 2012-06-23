@@ -3,3 +3,8 @@
 
 #jekyll
 _site/*
+
+#sass
+.sass-cache/*
+
+css/style.css

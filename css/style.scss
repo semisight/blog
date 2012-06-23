@@ -1,0 +1,74 @@
+$bgCol: #ccc;
+$fund: 14pt;
+$full: 21;
+
+$h2f: $fund + 7pt;
+$h2h: (($fund + 7pt)/$fund);
+
+$h3f: $fund + 3pt;
+$h3h: (($fund + 3pt)/$fund);
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {  
+	margin:0; 
+	padding:0; 
+}
+
+html {
+	background-color: #ddd;
+}
+
+body {
+	font-family: 'Vollkorn', serif;
+
+	background-color: #fff;
+	font-size: $fund;
+	margin:0 1in;
+	padding:0.5in 1in 0 1in;
+
+	width: $fund * 30;
+}
+
+li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {  
+	color: #333;
+}
+
+p {
+	line-height: 1.5em;
+	text-align: justify;
+
+	width: $fund * 30;
+}
+
+p + p {
+	text-indent: 2.5em;
+}
+
+h2 {
+	font-size: $h2f em;
+	line-height: 1em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: $h3f em;
+	line-height: $h3h em;
+	margin-top: $h3h em;
+	margin-bottom: $h3h em;
+}
+
+a, a:visited {
+	text-decoration: none;
+
+	color: #000;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #a32;
+}
+
+::selection, ::-moz-selection {
+	background-color: #e81;
+	color: #eff;
+}
