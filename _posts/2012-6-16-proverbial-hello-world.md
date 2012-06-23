@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: Proverbial "Hello World"
+categories: [me]
 ---
 
 ##Hello, World

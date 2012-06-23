@@ -1,0 +1,8 @@
+---
+layout: default
+permalink: /blog/:title
+---
+
+<h3>About {{ page.categories | array_to_sentence_string }}, posted at {{ page.date | date_to_string }}</h3>
+
+{{ content }}
