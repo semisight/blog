@@ -1,0 +1,36 @@
+html {
+	width: 600px;
+}
+
+h1 {
+	font-size: 2.25em;
+	margin: 0.5em 0em 0.5em 0.5em;
+	display: inline-block;
+
+	color: #ffffff;
+	background: #000000;
+	
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+h2, h3 {
+	color: #c9c9c9;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #c4e13a;
+}

@@ -3,7 +3,11 @@ layout: default
 title: Placeholder
 ---
 
-#Posts
+<ul id="nav">
+	<li><a href="/about">About Me</a></li>
+</ul>
+
+##Posts
 <ul>
 	{% for post in site.posts %}
 		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
