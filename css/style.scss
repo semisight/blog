@@ -85,6 +85,11 @@ a:hover {
 	color: #a32;
 }
 
+li.exp, li.nav {
+	display: inline;
+	padding: 0 1em;
+}
+
 ::selection, ::-moz-selection {
 	background-color: #e81;
 	color: #eff;

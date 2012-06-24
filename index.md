@@ -4,12 +4,13 @@ title: Placeholder
 ---
 
 <ul id="nav">
-	<li><a href="/about">About Me</a></li>
+	<li class="nav"><a href="/about">About Me</a></li>
+	<li class="nav"><a href="/experiments">Experiments</a></li>
 </ul>
 
 ##Posts
 <ul>
 	{% for post in site.posts %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		<li class="exp"><a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
