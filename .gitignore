@@ -7,4 +7,5 @@ _site/*
 #sass
 .sass-cache/*
 
-css/style.css
+#compass
+stylesheets/*

@@ -1,6 +1,3 @@
----
----
-
 $bgCol: #ddd;
 $fund: 12px;
 
@@ -33,7 +30,7 @@ body {
 }
 
 li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {  
-	color: #333;
+	color: #444;
 }
 
 p {
@@ -48,6 +45,7 @@ p + p {
 
 h2 + p:first-line {
 	font-variant: small-caps;
+	font-weight: bold;
 }
 
 h2 + p:first-letter {
@@ -65,15 +63,15 @@ h1 {
 h2 {
 	font-size: $h2f;
 	line-height: $full;
-	margin-top: $full/2;
-	margin-bottom: $full/2;
+	margin-top: 0;
+	margin-bottom: $full;
 }
 
 h3 {
 	font-size: $h3f;
 	line-height: $full;
-	margin-top: $full/2;
-	margin-bottom: $full/2;
+	margin-top: 0;
+	margin-bottom: $full;
 }
 
 a, a:visited {
@@ -91,7 +89,6 @@ a:hover {
 
 li.exp, li.nav {
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
 }
 
