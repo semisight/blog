@@ -1,9 +1,13 @@
+---
+---
+
 $bgCol: #ddd;
 $fund: 12px;
-$full: 18px;
 
-$h1f: $fund + 10;
-$h2f: $fund + 6;
+$full: $fund * 1.5;
+
+$h1f: $full + 2;
+$h2f: $full;
 $h3f: $fund + 2;
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {  
@@ -86,8 +90,18 @@ a:hover {
 }
 
 li.exp, li.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav {
 	display: inline;
-	padding: 0 1em;
+	padding-right: 2em;
+}
+
+li.nav:last-of-type {
+	padding-right: 0;
 }
 
 ::selection, ::-moz-selection {

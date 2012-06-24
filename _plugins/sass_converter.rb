@@ -5,7 +5,7 @@ module Jekyll
   require 'sass'
   class SassConverter < Converter
     safe true
-    priority :high
+    priority :low
 
      def matches(ext)
       ext =~ /scss/i
