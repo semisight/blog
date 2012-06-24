@@ -1,12 +1,10 @@
-$bgCol: #ccc;
-$fund: 14pt;
-$full: 21;
+$bgCol: #ddd;
+$fund: 12px;
+$full: 18px;
 
-$h2f: $fund + 7pt;
-$h2h: (($fund + 7pt)/$fund);
-
-$h3f: $fund + 3pt;
-$h3h: (($fund + 3pt)/$fund);
+$h1f: $fund + 10;
+$h2f: $fund + 6;
+$h3f: $fund + 2;
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {  
 	margin:0; 
@@ -20,12 +18,14 @@ html {
 body {
 	font-family: 'Vollkorn', serif;
 
+	background:url('http://24ways.org/examples/compose-to-a-vertical-rhythm/underline.gif');
 	background-color: #fff;
 	font-size: $fund;
-	margin:0 1in;
-	padding:0.5in 1in 0 1in;
+	margin:0 auto;
+	padding:36px 72px 0 72px;
 
 	width: $fund * 30;
+	height: 25in;
 }
 
 li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {  
@@ -33,9 +33,8 @@ li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {
 }
 
 p {
-	line-height: 1.5em;
+	line-height: $full;
 	text-align: justify;
-
 	width: $fund * 30;
 }
 
@@ -43,18 +42,34 @@ p + p {
 	text-indent: 2.5em;
 }
 
+h2 + p:first-line {
+	font-variant: small-caps;
+}
+
+h2 + p:first-letter {
+	font-variant: normal;
+	font-size: $full;
+}
+
+h1 {
+	font-size: $h1f;
+	line-height: $full*1.5;
+	margin-top: 0;
+	margin-bottom: $full*0.5;
+}
+
 h2 {
-	font-size: $h2f em;
-	line-height: 1em;
-	margin-top: 0em;
-	margin-bottom: 1em;
+	font-size: $h2f;
+	line-height: $full;
+	margin-top: $full/2;
+	margin-bottom: $full/2;
 }
 
 h3 {
-	font-size: $h3f em;
-	line-height: $h3h em;
-	margin-top: $h3h em;
-	margin-bottom: $h3h em;
+	font-size: $h3f;
+	line-height: $full;
+	margin-top: $full/2;
+	margin-bottom: $full/2;
 }
 
 a, a:visited {
@@ -63,6 +78,8 @@ a, a:visited {
 	color: #000;
 	font-weight: bold;
 }
+
+h1 {color: #333}
 
 a:hover {
 	color: #a32;

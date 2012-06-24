@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Proverbial "Hello World"
-permalink: /blog/:title/index.html
 categories: [me]
 ---
 
