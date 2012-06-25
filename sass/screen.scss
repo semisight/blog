@@ -4,11 +4,89 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "partials/_base.scss";
-@import "blueprint";
+@import "compass";
 
+/* typography */
+@import "compass/typography/links/link-colors";
+@import "compass/typography/links/hover-link";
+@import "compass/typography/vertical_rhythm";
+
+/* base import */
+@import "partials/base";
+
+/* extras (fonts and syntax) */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 @import url(http://fonts.googleapis.com/css?family=Vollkorn);
 
-@import "style.scss";
 @import "syntax.scss";
+
+/* start style */
+
+$bg-bright: #fff;
+$bg-dark: #ddd;
+
+$primary: #a32;
+$primary-dark: shade($primary, 80%);
+
+html {
+	@include establish-baseline(12px);
+	font-family: 'Vollkorn', serif;
+
+	background-color: $bg-dark;
+	height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0.5in 1in 0 1in;
+	width: 35em;
+	height: 100%;
+
+	background-color: $bg-bright;
+}
+
+a {
+	@include hover-link;
+	@include link-colors(#000, $primary, $primary, $primary-dark);
+}
+
+h1 {
+	@include adjust-font-size-to($base-font-size*2);
+}
+
+h2 {
+	@include adjust-font-size-to($base-font-size*4/3);
+}
+
+h3 {
+	@include adjust-font-size-to($base-font-size*7/6);
+}
+
+p {
+	text-align: justify;
+}
+
+p + p {
+	text-indent: 2.5em;
+}
+
+h2 + p:first-line {
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+li.nav {
+	display: inline;
+	padding-right: 2.5em;
+}
+
+li.nav:last-of-type {
+	padding-right: 0;
+}
+
+#footer {
+	position: absolute;
+	bottom: -0.5in;
+
+	@include adjust-font-size-to($base-font-size*5/6);
+}

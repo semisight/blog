@@ -9,3 +9,5 @@ _site/*
 
 #compass
 stylesheets/*
+
+tmp/*
