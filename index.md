@@ -6,8 +6,14 @@ title: Placeholder
 ##Posts
 <ul class="index">
 	{% for post in site.posts %}
-		<li class="exp">{{ post.content | only_first_p | read_more: post.url }}</li>
+		<li class="exp">
+			<div>
+				<h3>{{ post.title }}</h3>
+				{{ post | only_first_p }}
+			</div>
+		</li>
 	{% endfor %}
+	<br>
 	{% for post in site.posts offset:3 %}
 		<li class="exp"><a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
