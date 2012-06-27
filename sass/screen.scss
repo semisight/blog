@@ -11,6 +11,9 @@
 @import "compass/typography/links/hover-link";
 @import "compass/typography/vertical_rhythm";
 
+/* css standard */
+@import "compass/css3/border-radius";
+
 /* base import */
 @import "partials/base";
 
@@ -28,7 +31,8 @@ $primary: #a32;
 $primary-dark: shade($primary, 80%);
 
 html {
-	@include establish-baseline(12px);
+	/* font size is now linked to the stranded 3:5 fibonacci sequence */
+	@include establish-baseline(16px);
 	font-family: 'Vollkorn', serif;
 
 	background-color: $bg-dark;
@@ -37,8 +41,8 @@ html {
 
 body {
 	margin: 0 auto;
-	padding: 0.5in 1in 0 1in;
-	width: 35em;
+	padding: $base-line-height 1in 0 1in;
+	width: 33em;
 	height: 100%;
 
 	background-color: $bg-bright;
@@ -50,28 +54,39 @@ a {
 }
 
 h1 {
-	@include adjust-font-size-to($base-font-size*2);
+	@include adjust-font-size-to(34px);
+
+	position: absolute;
+	background-color: #a32;
+	color: #000;
+	left: 0px;
+
+	text-indent: 2.5em;
+	@include border-radius(0 0.5em 0.5em 0);
+	padding: $base-line-height/4 $base-line-height;
 }
 
 h2 {
-	@include adjust-font-size-to($base-font-size*4/3);
+	@include adjust-font-size-to(26px);
 }
 
 h3 {
-	@include adjust-font-size-to($base-font-size*7/6);
+	@include adjust-font-size-to(21px);
 }
 
-p {
-	text-align: justify;
+h4 {
+	@include adjust-font-size-to(13px);
+}
+
+p:first-line {
+	font-variant: small-caps;
+	font-weight: bold;
 }
 
 p + p {
 	text-indent: 2.5em;
-}
-
-h2 + p:first-line {
-	font-variant: small-caps;
-	font-weight: bold;
+	font-variant: normal;
+	font-weight: normal;
 }
 
 li.nav {
@@ -83,9 +98,13 @@ li.nav:last-of-type {
 	padding-right: 0;
 }
 
+#header {
+	position:relative;
+	left: -1in;
+	height: $base-line-height*3;
+}
+
 #footer {
 	position: absolute;
 	bottom: -0.5in;
-
-	@include adjust-font-size-to($base-font-size*5/6);
 }

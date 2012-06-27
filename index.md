@@ -9,7 +9,7 @@ title: Placeholder
 		<li class="exp">
 			<div>
 				<h3>{{ post.title }}</h3>
-				{{ post | only_first_p }}
+				{{ post | only_first_p | read_more: post.url }}
 			</div>
 		</li>
 	{% endfor %}

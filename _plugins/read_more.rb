@@ -4,7 +4,7 @@ module Jekyll
       text = '' if text.nil?
       text = text.to_str
 
-      "#{text}<a href=\"#{url}\" rel=\"nofollow\" class=\"read-more\">read more &raquo;</a>"
+      "#{text}<h4><a href=\"#{url}\" rel=\"nofollow\" class=\"read-more\">read more &raquo;</a></h4>"
     end
   end
 end
