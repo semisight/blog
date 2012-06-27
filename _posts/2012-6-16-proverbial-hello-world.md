@@ -14,7 +14,12 @@ flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow 
 
 Now to highlight some code:
 {% highlight python linenos %}
-def foo():
-	print("Hello!")
-	pass
+class foo(object):
+	def __init__(self):
+		self.arr = [];
+		return self
+
+	def __repr__(self):
+		return 'omnomnom' + ', '.join(arr)
 {% endhighlight %}
+After the code, a paragraph continues. There should not be any small caps on this paragraph.

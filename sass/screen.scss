@@ -13,19 +13,20 @@
 
 /* css standard */
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 
 /* base import */
 @import "partials/base";
 
 /* extras (fonts and syntax) */
-@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
 
 @import "syntax.scss";
 
 /* start style */
 
 $bg-bright: #fff;
-$bg-dark: #ddd;
+$bg-dark: #888;
 
 $primary: #a32;
 $primary-dark: shade($primary, 80%);
@@ -33,7 +34,7 @@ $primary-dark: shade($primary, 80%);
 html {
 	/* font size is now linked to the stranded 3:5 fibonacci sequence */
 	@include establish-baseline(16px);
-	font-family: 'Vollkorn', serif;
+	font-family: 'Merriweather', serif;
 
 	background-color: $bg-dark;
 	height: 100%;
@@ -46,6 +47,7 @@ body {
 	height: 100%;
 
 	background-color: $bg-bright;
+	@include single-box-shadow(#666, 0, 0, 80px, 35px);
 }
 
 a {
@@ -55,14 +57,15 @@ a {
 
 h1 {
 	@include adjust-font-size-to(34px);
+	text-indent: 2.5em;
+
+	background-color: #a32;
+	color: #fff;
+	text-shadow: -1px, -1px, 1px, #000;
 
 	position: absolute;
-	background-color: #a32;
-	color: #000;
 	left: 0px;
-
-	text-indent: 2.5em;
-	@include border-radius(0 0.5em 0.5em 0);
+	@include border-radius(0 0.75em 0.75em 0);
 	padding: $base-line-height/4 $base-line-height;
 }
 
@@ -78,20 +81,40 @@ h4 {
 	@include adjust-font-size-to(13px);
 }
 
+code {
+	@include adjust-font-size-to(13px);
+}
+
+.highlight {
+	@include leader;
+	@include trailer;
+}
+
 p:first-line {
 	font-variant: small-caps;
 	font-weight: bold;
 }
 
-p + p {
-	text-indent: 2.5em;
+p + p:first-line, div.highlight + p:first-line {
 	font-variant: normal;
 	font-weight: normal;
 }
 
+p + p {
+	text-indent: 2.5em;
+}
+
+ul#nav {
+	position: absolute;
+	right: -1.25in;
+	top: $base-line-height*0.85;
+
+	background-color: $primary-dark;
+}
+
 li.nav {
 	display: inline;
-	padding-right: 2.5em;
+	padding-right: 1.25em;
 }
 
 li.nav:last-of-type {
@@ -104,7 +127,11 @@ li.nav:last-of-type {
 	height: $base-line-height*3;
 }
 
+#rule {
+	@include trailer;
+}
+
 #footer {
 	position: absolute;
-	bottom: -0.5in;
+	bottom: $base-line-height*0;
 }

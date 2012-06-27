@@ -8,7 +8,7 @@ title: Placeholder
 	{% for post in site.posts %}
 		<li class="exp">
 			<div>
-				<h3>{{ post.title }}</h3>
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				{{ post | only_first_p | read_more: post.url }}
 			</div>
 		</li>
