@@ -37,12 +37,11 @@ html {
 	font-family: 'Merriweather', serif;
 
 	background-color: $bg-dark;
-	height: 100%;
 }
 
 body {
 	margin: 0 auto;
-	padding: $base-line-height 1in 0 1in;
+	padding: $base-line-height 1in;
 	width: 33em;
 	height: 100%;
 
@@ -65,7 +64,7 @@ h1 {
 
 	position: absolute;
 	left: 0px;
-	@include border-radius(0 0.75em 0.75em 0);
+	@include border-radius(0 1em 1em 0);
 	padding: $base-line-height/4 $base-line-height;
 }
 
@@ -101,6 +100,7 @@ p + p:first-line, div.highlight + p:first-line {
 }
 
 p + p {
+	@include leader;
 	text-indent: 2.5em;
 }
 
@@ -128,10 +128,9 @@ li.nav:last-of-type {
 }
 
 #rule {
-	@include trailer;
 }
 
 #footer {
-	position: absolute;
-	bottom: $base-line-height*0;
+	@include leader;
+	@include trailer;
 }
