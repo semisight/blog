@@ -25,12 +25,6 @@
 
 /* start style */
 
-$bg-bright: #fff;
-$bg-dark: #888;
-
-$primary: #a32;
-$primary-dark: shade($primary, 80%);
-
 html {
 	/* font size is now linked to the stranded 3:5 fibonacci sequence */
 	@include establish-baseline(16px);
@@ -87,6 +81,10 @@ code {
 .highlight {
 	@include leader;
 	@include trailer;
+
+	padding: 0.5em;
+
+	@include border-radius(5px);
 }
 
 p:first-line {
@@ -128,6 +126,7 @@ li.nav:last-of-type {
 }
 
 #rule {
+	color: #000;
 }
 
 #footer {
