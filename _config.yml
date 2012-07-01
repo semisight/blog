@@ -1,5 +1,4 @@
 pygments: true
 permalink: /:categories/:title
-auto: true
 
-exclude: sass
+exclude: sass, Procfile, config.rb, deploy

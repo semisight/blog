@@ -42,8 +42,6 @@ body {
 	background-color: $bg-bright;
 	@include single-box-shadow(#666, 0, 0, 80px, 35px);
 
-	@include debug-vertical-alignment;
-
 	color: #171717;
 }
 
@@ -91,16 +89,6 @@ code {
 	padding: 0.5em;
 
 	@include border-radius(5px);
-}
-
-p:first-line {
-	font-variant: small-caps;
-	font-weight: bold;
-}
-
-p + p:first-line, div.highlight + p:first-line {
-	font-variant: normal;
-	font-weight: normal;
 }
 
 p + p {
