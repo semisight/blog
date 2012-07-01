@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Placeholder
+title: Bitlimn
 ---
 
 ##Posts
