@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 from __future__ import print_function
-from subprocess import check_call, call
+from subprocess import check_call
 import os
 
-compressible = ['html', 'css', 'js'];
+compressible = {'html': 'html', 'css': 'css', 'js': 'javascript'};
 
 #compress: path -> nil
-#side effect: file is gzipped.
+#side effect: file is minified and gzipped.
 def compress(handle):
 	ext = os.path.splitext(handle)[1][1:]
 
@@ -15,8 +15,12 @@ def compress(handle):
 		print("\text: " + os.path.splitext(handle)[1])
 		return
 
-	check_call(['gzip', handle])
-	check_call(['mv', handle + '.gz', handle])
+	#For certain types, minification is possible.
+	if ext == 'css':
+		check_call(['yuicompressor', handle, '-o', handle])
+	
+	#check_call(['gzip', handle])
+	#check_call(['mv', handle + '.gz', handle])
 
 	print("Successfully compressed " + handle)
 
@@ -27,11 +31,12 @@ def upload(handle):
 	ext = os.path.splitext(handle)[1][1:]
 
 	if ext in compressible:
-		cmd += ['-m', 'text/'+ext, "--add-header='Content-Encoding: gzip'"]
+		cmd += ['-m', 'text/'+compressible[ext], "--add-header='Content-Encoding: gzip'"]
 	
 	cmd += ['put', handle, os.path.join('s3://www.bitlimn.com', handle[6:])]
 
-	call(' '.join(cmd), shell=True)
+	print(' '.join(cmd))
+	#check_call(' '.join(cmd), shell=True)
 
 #walk_site: (path -> nil) -> nil
 #side effect: runs fn() on all files in _site.
