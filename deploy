@@ -19,8 +19,8 @@ def compress(handle):
 	if ext == 'css':
 		check_call(['yuicompressor', handle, '-o', handle])
 	
-	#check_call(['gzip', handle])
-	#check_call(['mv', handle + '.gz', handle])
+	check_call(['gzip', handle])
+	check_call(['mv', handle + '.gz', handle])
 
 	print("Successfully compressed " + handle)
 
@@ -36,7 +36,7 @@ def upload(handle):
 	cmd += ['put', handle, os.path.join('s3://www.bitlimn.com', handle[6:])]
 
 	print(' '.join(cmd))
-	#check_call(' '.join(cmd), shell=True)
+	check_call(' '.join(cmd), shell=True)
 
 #walk_site: (path -> nil) -> nil
 #side effect: runs fn() on all files in _site.
