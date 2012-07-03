@@ -119,8 +119,11 @@ li.nav:last-of-type {
 	height: $base-line-height*3;
 }
 
-#rule {
+hr {
+	border: 0;
+	height: 1px;
 	color: #000;
+	background-color: #000;
 }
 
 #footer {
