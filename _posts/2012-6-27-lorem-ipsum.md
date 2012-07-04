@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lorem Ipsum
-category: test
+categories: [blog, test]
 ---
 
 ##Lorem Ipsum
