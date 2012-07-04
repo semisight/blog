@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proverbial "Hello World"
-category: me
+category: [blog, me]
 ---
 
 ##Hello, World
