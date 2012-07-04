@@ -33,8 +33,7 @@ def upload(handle):
 	if ext in compressible:
 		cmd += ['-m',
 				'text/'+compressible[ext],
-				"--add-header='Content-Encoding: gzip'",
-				"--add-header='Vary: Accept-Encoding'"]
+				"--add-header='Content-Encoding: gzip'"]
 	
 	cmd += ['put', handle, os.path.join('s3://www.bitlimn.com', handle[6:])]
 
