@@ -1,6 +1,6 @@
 ---
 layout: post
-title: {{ page.title }}
+title: Avoiding Semimathy
 categories: [blog]
 ---
 
@@ -18,4 +18,4 @@ The idea of a polyglot can be generalized beyond just languages: when one person
 
 ###Not a Perfect Analogy
 
-###Do Things, Be Curious, but Remember to Follow Through…
+###Do Things, Be Curious, but Remember to Follow Through
