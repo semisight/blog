@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Avoiding Semimathy
+description: 
 categories: [blog]
 ---
 
