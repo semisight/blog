@@ -3,6 +3,7 @@ layout: post
 title:
 description:
 categories: [blog]
+draft: true
 ---
 
 ##The Relation between Form and Experience

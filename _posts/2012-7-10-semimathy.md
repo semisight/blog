@@ -3,6 +3,7 @@ layout: post
 title: Avoiding Semimathy
 description: 
 categories: [blog]
+draft: true
 ---
 
 ##Avoiding semi-mathy

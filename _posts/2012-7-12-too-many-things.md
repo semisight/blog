@@ -3,6 +3,7 @@ layout: post
 title: Too many (cheap) things
 description:
 categories: [blog]
+draft: true
 ---
 
 ##We have too many (cheap) things
