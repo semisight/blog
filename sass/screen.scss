@@ -11,10 +11,6 @@
 @import "compass/typography/links/hover-link";
 @import "compass/typography/vertical_rhythm";
 
-/* css standard */
-@import "compass/css3/border-radius";
-@import "compass/css3/box-shadow";
-
 /* base import */
 @import "partials/base";
 
@@ -25,7 +21,7 @@
 
 html {
 	/* font size is now linked to the stranded 3:5 fibonacci sequence */
-	@include establish-baseline(16px);
+	@include adjust-font-size-to(16px);
 	font-family: 'Merriweather', serif;
 
 	background-color: $bg-dark;
