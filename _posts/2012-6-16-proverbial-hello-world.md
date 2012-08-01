@@ -14,7 +14,7 @@ Now that I have your attention, I will highlight some code. The code is stupid, 
 {% highlight python linenos %}
 class foo(object):
 	def __init__(self):
-		self.arr = [];
+		self.arr = []
 		return self
 
 	def __repr__(self):
