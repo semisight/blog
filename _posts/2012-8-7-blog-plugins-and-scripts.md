@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Blog Plugins
-descriptions: Plugins used to render this blog.
+descriptions: Plugins and scripts used to render this blog.
 categories: [web-experiments]
 ---
 
-##My Blog Plugins
+##My Blog Plugins and Scripts
 
 Below is a list of all of the jekyll plugins that I wrote for this blog. I make no claims to their working state at any time, and they are covered by the [LICENSE](https://github.com/semisight/blog/blob/master/LICENSE) present in the top level of the Github repo that they link to.
 
@@ -49,5 +49,11 @@ The output of concat should look like this:
 {% endraw %}{% endhighlight %}
 
 Where all titles are links to the post in question.
+
+###deploy
+
+[deploy](https://github.com/semisight/blog/blob/master/deploy) is a python script intended for uploading files to s3. It requires s3cmd for the heavy lifting. deploy will compress all HTML, CSS, and javascript files with gzip, and set the content-encoding header appropriately. It will also set cache-control for max-age=1 week for most assets (the exception being 'index.html' files in the root directory or one subdirectory down, which are set for max-age=1 day).
+
+This script has some hardcoded elements, so it may be advisable to perform dry-runs until the script has been fully adapted to your use scenario. It is easy to do dry-runs--just comment out the `check_call()` at the end of the `upload()` procedure.
 
 You are free as always to take and modify any of the plugins above, in compliance with the LICENSE provided.
