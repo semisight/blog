@@ -34,6 +34,14 @@ def upload(handle):
 		cmd += ['-m',
 				'text/'+compressible[ext],
 				"--add-header='Content-Encoding: gzip'"]
+
+	path_array = handle.split('/')[1:]
+	is_second_level = len(path_array) <= 2 and path_array[-1] == 'index.html'
+	
+	if not is_second_level:
+		cmd += ["--add-header='Cache-Control: max-age=604800'"]
+	else:
+		cmd += ["--add-header='Cache-Control: max-age=86400'"]
 	
 	cmd += ['put', handle, os.path.join('s3://www.bitlimn.com', handle[6:])]
 
