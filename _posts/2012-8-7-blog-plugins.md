@@ -21,7 +21,7 @@ This causes one problem, however: liquid filters cannot be used inside tags like
 
 [concat_top_3](https://github.com/semisight/blog/blob/master/_plugins/concat_top_3.rb) is a dirty hack. It combines what should be multiple filters into a single, hard-coded plugin. Unfortunately, liquid is not very powerful, so this is what I had to do to get what I wanted. With that in mind, concat does quite a bit for me. In essence, it allows be to bypass using a liquid `for` loop by outputting html directly. It is intended to be used like so:
 
-{% highlight text %}{% raw %}
+{% highlight text linenos %}{% raw %}
     ##All posts, without any drafts, three most recent emphasized.
     {{ site.posts | filter_drafts | concat_top_3: "ul_class", "li_class" }}
 {% endraw %}{% endhighlight %}
@@ -30,7 +30,7 @@ Where `site.posts` can be exchanged for any variable that contains an array of p
 
 The output of concat should look like this:
 
-{% highlight text %}{% raw %}
+{% highlight text linenos %}{% raw %}
     Post 1 Title
         first paragraph.
     read more >>
