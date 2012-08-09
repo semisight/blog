@@ -76,6 +76,17 @@ code {
 	@include adjust-font-size-to(13px);
 }
 
+blockquote {
+	@include leader;
+	@include trailer;
+
+	margin-left: 1in;
+	margin-right: 1in;
+
+	font-style: italic;
+	color: #333;
+}
+
 .highlight {
 	@include leader;
 	@include trailer;
