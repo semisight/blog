@@ -46,7 +46,7 @@ a {
 	@include link-colors(#000, $primary, $primary, $primary-dark);
 }
 
-h1 {
+div#title {
 	@include adjust-font-size-to(34px);
 	text-indent: 2.5em;
 
@@ -60,12 +60,17 @@ h1 {
 	padding: $base-line-height/4 $base-line-height;
 }
 
-h2 {
+h1 {
 	@include adjust-font-size-to(26px);
 }
 
-h3 {
+h2 {
 	@include adjust-font-size-to(21px);
+}
+
+h3 {
+	@include adjust-font-size-to(16px);
+	font-weight: 600;
 }
 
 h4 {

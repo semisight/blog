@@ -6,6 +6,6 @@ categories: [blog]
 draft: true
 ---
 
-##The Day I Became a Geek
+#The Day I Became a Geek
 
 I hate it when people make me out to be some sort of human calculator freak. I'm

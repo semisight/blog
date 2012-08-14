@@ -6,7 +6,7 @@ categories: [blog]
 draft: true
 ---
 
-##We have too many (cheap) things
+#We have too many (cheap) things
 
 Thesis: when things get cheaper, it makes it easier to buy what we don't need.
 

@@ -6,7 +6,7 @@ categories: [blog]
 draft: true
 ---
 
-##Add More Engineering
+#Add More Engineering
 
 A little more than a year and a half ago, I was among the roughly 210 individuals privileged enough to attend Olin College of Engineering's (henceforth Olin) Candidate Weekend. To be honest, I went into it a bit conflicted. At the time, Olin was the closest school I had to a top choice (among others like Cal, USC, MIT, GA Tech--keep in mind this is still application season, not quite decision season, so I hadn't heard back from many of these schools).
 
@@ -16,11 +16,11 @@ At the same time, Olin was and is *very* small. They advertise proudly on their 
 
 All of this in mind, I remember being cautiously optimistic going into it. I knew that as a white male, my chances of getting accepted were still slim. But I had gotten this far, and I was determined not to waste any chances given to me.
 
-###Fight for our Love
+##Fight for our Love
 
 {My impression after the first day at CW}.
 
-###The Group Interview
+##The Group Interview
 
 The second day started at 9am sharp. It was raining the day before, but now the sky was clear, the air crisp like it only can be after a rain, and I was feeling good, and on my guard for the "judging."
 
