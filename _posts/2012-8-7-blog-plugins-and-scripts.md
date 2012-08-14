@@ -13,7 +13,7 @@ Below is a list of all of the jekyll plugins that I wrote for this blog. I make 
 
 [filter_drafts](https://github.com/semisight/blog/blob/master/_plugins/filter_drafts.rb) is a simple plugin that takes an array of posts and returns a list of all posts without the YAML metadata 'draft' set. I use it to keep jekyll from rendering my drafts.
 
-Why not use `unless post.draft`? It is an option that is floating around on the jekyll plugins list on the wiki, among other places. I wanted my blog layout to highlight the three most recent posts. Unfortunately, using the `unless` tag in conjunction with a limit:3 `for` loop means that draft posts are also counted in the three most recent. This plugin solves that, by doing the work in Ruby using array#reject.
+Why not use `unless post.draft`? It is an option that is floating around on the jekyll plugins list on the wiki, among other places. I wanted my blog layout to highlight the three most recent posts. Unfortunately, using the `unless` tag in conjunction with a limit:3 `for` loop means that draft posts are also counted in the three most recent. This plugin solves that, by doing the work in Ruby using `array#reject`.
 
 This causes one problem, however: liquid filters cannot be used inside tags like `for`. They can only be used for direct output. With that problem in mind, we turn to my next plugin, concat_top_3…
 

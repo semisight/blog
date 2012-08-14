@@ -13,7 +13,7 @@ module Jekyll
         output << "<p>"
         output << Nokogiri::HTML(post.content).at_css("p").inner_html
         output << "</p>\n"
-        output << "<h4><a href=\"#{post.url}\" class=\"more\">read more &raquo;</a></h4>"
+        output << "<h4><a href=\"#{post.url}\" class=\"more\">read more &raquo;</a></h4><br />"
       }
 
       mass.each {|post|

@@ -22,7 +22,7 @@
 html {
 	/* font size is now linked to the stranded 3:5 fibonacci sequence */
 	@include adjust-font-size-to(16px);
-	font-family: 'Merriweather', serif;
+	font-family: serif;
 
 	background-color: $bg-dark;
 }
@@ -42,7 +42,6 @@ body {
 a {
 	color: #000;
 	text-decoration: none;
-	font-weight: 700;
 	@include link-colors(#000, $primary, $primary, $primary-dark);
 }
 
@@ -60,8 +59,13 @@ div#title {
 	padding: $base-line-height/4 $base-line-height;
 }
 
+h1, h2, h3, h4, ul#nav {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
 h1 {
 	@include adjust-font-size-to(26px);
+	font-weight: 600;
 }
 
 h2 {
@@ -78,7 +82,11 @@ h4 {
 }
 
 code {
-	@include adjust-font-size-to(13px);
+	@include adjust-font-size-to(15.5px);
+}
+
+em {
+	font-style: italic;
 }
 
 blockquote {
@@ -106,6 +114,8 @@ p + p {
 }
 
 ul#nav {
+	font-weight: 600;
+
 	position: absolute;
 	right: -1.25in;
 	top: $base-line-height*0.85;
