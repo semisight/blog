@@ -26,11 +26,11 @@ Both of these problems can be solved by taking the error out of the range of the
 
 {% highlight c linenos %}
     struct return_type {
-    	*return_type* result;
+    	type result;
     	bool is_error;
     };
 {% endhighlight %}
 
 Then, we simply test if the error indicator is true before we call something that uses this, and throw an error for a return type if it is `true`.
 
-This pattern is called the [Maybe monad](http://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad). Where `null` checks invite a mess of braces into code, the Maybe monad comes with `null` checks built-in, and will pass the `null` (known in Haskell as `Nothing`) through. This concept overlaps with error handling, but it is more general.
+This pattern is called the <a href='http://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad'>Maybe monad</a>. Where `null` checks invite a mess of braces into code, the Maybe monad comes with `null` checks built-in, and will pass the `null` (known in Haskell as `Nothing`) through. This concept overlaps with error handling, but it is more general.

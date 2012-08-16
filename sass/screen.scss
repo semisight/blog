@@ -82,7 +82,7 @@ h4 {
 }
 
 code {
-	@include adjust-font-size-to(15.5px);
+	@include adjust-font-size-to(13px);
 }
 
 em {
@@ -110,7 +110,7 @@ blockquote {
 }
 
 p + p {
-	text-indent: 2.5em;
+	@include leader;
 }
 
 ul#nav {
