@@ -21,4 +21,4 @@ If you look inside the sicp repo I linked to above, you'll see that there is a f
 
 Please read the README in the sicp repo before emailing/commenting/submitting a pull request! I want to know that my solution to problem *x* fails with input *y*, but I want to figure the solution out on my own! Remember:
 
-> Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty… -Teddy Roosevelt
+> "Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty…" -Teddy Roosevelt
