@@ -1,11 +1,33 @@
-code {
+@import "partials/base";
+@import "compass/css3/border-radius";
+@import "compass/typography/vertical_rhythm";
+
+code, .highlighttable {
 	font-family:'Monaco','Courier New', monospace;
 	white-space:pre-wrap;
+
+	@include adjust-font-size-to(13px);
 }
 
 .highlight {
+background-color:#002b36;
+color:#93a1a1;
+
+padding: 10px;
+
+@include border-radius(0 5px 5px 0);
+}
+
+.linenodiv {
 background-color:#073642;
 color:#93a1a1;
+
+padding: 10px;
+
+position: relative;
+top: -$base-line-height/2;
+
+@include border-radius(5px 0 0 5px);
 }
 
 .highlight .cs {

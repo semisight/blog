@@ -81,10 +81,6 @@ h4 {
 	@include adjust-font-size-to(13px);
 }
 
-code {
-	@include adjust-font-size-to(13px);
-}
-
 em {
 	font-style: italic;
 }
@@ -100,7 +96,7 @@ blockquote {
 	color: #333;
 }
 
-.highlight {
+.highlighttable {
 	@include leader;
 	@include trailer;
 
