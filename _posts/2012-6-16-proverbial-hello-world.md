@@ -12,6 +12,7 @@ This will be my "real" personal website. I will be using the ever friendly Jekyl
 flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow.
 
 Now that I have your attention, I will highlight some code. The code is stupid, and doesn't do anything useful. It is a good test however! Let's see how it looks...
+
 {% highlight python linenos=table %}
 class foo(object):
 	def __init__(self):
@@ -21,4 +22,5 @@ class foo(object):
 	def __repr__(self):
 		return 'omnomnom' + ', '.join(arr)
 {% endhighlight %}
+
 After the code, a paragraph continues. There should not be any small caps on this paragraph.
