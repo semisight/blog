@@ -17,20 +17,22 @@
 
 html {
   @include adjust-font-size-to(16px);
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 body {
   margin: auto;
   width: $total-width;
   color: #171717;
+
+  position: relative;
 }
 
 #header {
   width: $sidebar-width;
   float: left;
 
-  position: relative;
+  position: absolute;
   left: -1 * $gap-width;
 }
 
@@ -45,8 +47,18 @@ a {
   @include link-colors($primary, $primary-dark);
 }
 
+#circle {
+  background-color: $primary;
+  border-radius: 50%;
+  margin: 2em 1em;
+
+  width: $sidebar-width * 0.60;
+  height: $sidebar-width * 0.60;
+
+  //Want to shrink circle on hover?
+}
+
 #title {
-  @include leader;
   @include adjust-font-size-to(42px);
   font-weight: 300;
   color: #000;
@@ -69,7 +81,7 @@ h4 {
 }
 
 p + h1, p + h2, p + h3 {
-  @include leader;
+  @include leader(.5);
 }
 
 em {
@@ -92,8 +104,4 @@ blockquote {
 
   padding: 0.5em;
   @include border-radius(5px);
-}
-
-ul#nav {
-  font-weight: 600;
 }
