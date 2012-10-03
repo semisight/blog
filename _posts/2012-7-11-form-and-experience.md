@@ -14,7 +14,7 @@ thesis: form is a shortcut to experience. It is a way for others to pass on the 
 
 counter: be sure to challenge and ask about why the form is used. If the reason is bad, __don't do it__!
 
-===
+---
 
 For the purposes of this post, we will take 'form' to mean an idea which is learned first by rote in order to build subconcious (sometimes muscle) memory in an area where the learner is not yet proficient.
 

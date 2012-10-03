@@ -1,10 +1,15 @@
-/* rythym settings */
-$base-font-size: 16px;
-$base-line-height: 24px;
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
 
-/* base colors */
-$bg-bright: hsl(40, 25, 97);
-$bg-dark: #888;
+$base-line-height: 24px;
+$base-font-size: 16px;
+
+$bg-bright: #ccc;
 
 $primary: #a32;
 $primary-dark: shade($primary, 80%);
+
+$gap-width: 2.5em;
+$total-width: 33em + $gap-width;
+$sidebar-width: 11em;
+$content-width: $total-width - $sidebar-width;
