@@ -47,14 +47,10 @@ a {
   @include link-colors($col-link, $col-primary);
 }
 
-#outc {
-  margin: 2em 1em;
-}
-
 #circle {
   background-color: $col-primary;
   border-radius: 50%;
-  margin: auto;
+  margin: 2em 1em;
 
   width: $sidebar-width * 0.60;
   height: $sidebar-width * 0.60;

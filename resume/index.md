@@ -6,18 +6,29 @@ description: The resume of Alex Bogart.
 
 #Alex Bogart
 ###Computer Scientist and Curious Person
+####Cell Phone: (949)-422-7924
+####Email: alex@bitlimn.com
 ####4 Shasta, Irvine CA 92612
 ####Persuing B.S. in Computer Engineering at University of Southern California (expected graduation date 2015)
 
 ---
 
 ##Languages and Tools
+
+###Languages
+
 * C++
 * C
 * Python
 * Perl
 * Java
+* Clojure
+
+###Tools
+
 * GIT
+* Vim
+* \*nix (including OS X)
 * OpenGL
 * VmWare vSphere and associated technologies (ESXi, &c.)
 
@@ -42,3 +53,4 @@ Worked as a teacher's assistant for a programming club in high school as a sopho
 ---
 
 ##References
+
