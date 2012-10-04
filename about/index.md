@@ -13,7 +13,7 @@ This site is named "bit limn." Bits are the fundamental unit of information (as 
 ##My "Experiments"
 I will take advantage of this site to host different small (and possibly large) client-side web projects that I think up. The web experiments page is where I intend to host them.
 
-{% unless site.categories.experiments | size %}
+{% unless site.categories.web-experiments | size %}
 There are currently no experiments up here.
 {% endunless %}
 
