@@ -80,8 +80,8 @@ h4 {
   @include adjust-font-size-to(13px);
 }
 
-p + h1, p + h2, p + h3 {
-  @include leader(.5);
+p + h1, p + h2, p + h3, p + p {
+  @include leader;
 }
 
 em {
