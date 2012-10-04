@@ -8,10 +8,12 @@ draft: false
 
 #The Day I Became a Geek
 
-I don't believe that I was always as 'smart' as I seem to be now. I'm not hyper-intelligent. I'm certainly no genius. But I am curious, and I am driven.
+I was born in Des Moines, Iowa, and I lived there until I was 5. This is something most people don't know about me. Even I forget sometimes. Life is so full of memories both good and bad, that sometimes it seems as if I hardly remember anything at all.
 
-I can remember the exact moment when something clicked inside me; an epiphany of such magnitude that as a 4 year old I could not comprehend its impact on my life until years later. I realized that night was that "if other people can do it, it can't be that hard." Turns out, it's true. For years, I wondered about calculus, and whether it really was as hard as people say. It isn't. I did it, veni, vidi, vici.
+Sometimes, when we're either very lucky or very unlucky, a memory sticks with us. Imprinted onto our psyche like a footprint in moondust. In the churning sea of our past, it is a safety raft, a sore thumb on the horizon. It's there forever. I remember one such moment. When I was four, something clicked inside me--an epiphany of such magnitude that as a 4 year old I could not comprehend its impact on my life until years later. I realized that night  that "if other people can do it, it can't be that hard" (hey, I was four, it won't be that elegant). Turns out, it's true. 
 
-As usual, the most important things in life are also the most simple. To this day, that realization of a four year old is what drives me to bigger and better things.
+Stated more simply, very few people are actual geniuses. The vast majority of humanity do not get by on clever insights and thinking 10 steps ahead. They get by by working hard.
+
+As usual, the most important things in life are also the most simple. I'm not hyper-intelligent. I'm certainly no genius. But I am curious, and I am driven. And to this day, that realization of a four year old is what drives me to bigger and better things.
 
 What drives you?

@@ -6,12 +6,7 @@ $line-spacing: 1.5;
 $base-font-size: 16px;
 $base-line-height: $line-spacing * $base-font-size;
 
-$bg-bright: #ccc;
-
-$primary: #a32;
-$primary-dark: shade($primary, 80%);
-
 $gap-width: 2.5em;
-$total-width: 33em + $gap-width;
+$total-width: 36em + $gap-width;
 $sidebar-width: 11em;
 $content-width: $total-width - $sidebar-width;

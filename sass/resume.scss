@@ -1,0 +1,49 @@
+/* reset and imports */
+@import "compass";
+@import "compass/reset";
+@import "compass/typography/vertical_rhythm";
+
+@import "partials/colors";
+
+@include establish-baseline;
+
+html {
+  @include adjust-font-size-to(16px);
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #222;
+}
+
+body {
+  margin: auto;
+  width: 6in;
+}
+
+h1 {
+  @include adjust-font-size-to(34px);
+}
+
+h2 {
+  @include adjust-font-size-to(26px);
+}
+
+h3 {
+  @include adjust-font-size-to(21px);
+}
+
+h4 {
+  @include adjust-font-size-to(13px);
+}
+
+ul {
+  text-indent: 1.5em;
+}
+
+hr {
+  @include leader(1);
+  @include trailer(.5);
+  height: 0;
+  width: 40%;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  color: #aaa;
+}

@@ -9,6 +9,7 @@
 
 /* base import */
 @import "partials/base";
+@import "partials/colors";
 
 /* extras (fonts and syntax) */
 @import "syntax.scss";
@@ -23,7 +24,7 @@ html {
 body {
   margin: auto;
   width: $total-width;
-  color: #171717;
+  color: $col-text;
 
   position: relative;
 }
@@ -42,20 +43,28 @@ body {
 }
 
 a {
-  color: #000;
   text-decoration: none;
-  @include link-colors($primary, $primary-dark);
+  @include link-colors($col-link, $col-primary);
+}
+
+#outc {
+  margin: 2em 1em;
 }
 
 #circle {
-  background-color: $primary;
+  background-color: $col-primary;
   border-radius: 50%;
-  margin: 2em 1em;
+  margin: auto;
 
   width: $sidebar-width * 0.60;
   height: $sidebar-width * 0.60;
 
   //Want to shrink circle on hover?
+  @include transition;
+}
+
+#circle:hover {
+  background-color: #000;
 }
 
 #title {

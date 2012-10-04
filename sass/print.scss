@@ -1,8 +1,26 @@
-@import "blueprint";
+/* reset and imports */
+@import "compass";
+@import "compass/reset";
+@import "compass/typography/vertical_rhythm";
 
-// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
-// @include blueprint-print
+html {
+  @include adjust-font-size-to(11px);
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #222;
+}
 
-//Recommended Blueprint configuration with scoping and semantic layout:
-body.bp {
-  @include blueprint-print(true); }
+h1 {
+  @include adjust-font-size-to(24px);
+}
+
+h2 {
+  @include adjust-font-size-to(19px);
+}
+
+h3 {
+  @include adjust-font-size-to(14px);
+}
+
+h4 {
+  @include adjust-font-size-to(11px);
+}
