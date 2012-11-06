@@ -3,7 +3,6 @@ layout: post
 title: Resolution
 description: My resolution to write less, more often.
 categories: [blog]
-draft: true
 ---
 
 #Resolution
@@ -12,8 +11,7 @@ I know I've been neglecting this site somewhat since I started school. I have po
 
 I want to change that.
 
-From now on, I want to lower the bar on how much I will write per post. Instead of writing a small essay each time, I want to be okay with one or two paragraphs. After all, a post is about persuasively conveying a point. Anything has more effect than not posting at all.
+From now on, I want to lower the bar on how much I will write per post. Instead of writing a small essay each time, I want to be okay with one or two paragraphs. I'm not going to try to change everything overnight--those types of resolutions never work. Instead, I'm going to try to [modify my behavior](http://www.nirandfar.com/2012/01/behavior-by-design.html) so that I want to post more.
 
-I'm going to set reminders all over the place so that I don't forget about this small corner of the net that I have acquired for myself. Time will tell if it works.
+After all, a post is (most often) about persuasively conveying a point. Anything has more effect than not posting at all.
 
-{inspired by "permission to suck"}
