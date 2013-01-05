@@ -24,7 +24,7 @@ description: The resume of Alex Bogart.
 * Java
 * Clojure
 
-###Tools
+###Tools and Technologies
 
 * GIT
 * Vim
@@ -32,14 +32,19 @@ description: The resume of Alex Bogart.
 * OpenGL
 * VmWare vSphere and associated technologies (ESXi, &c.)
 
+###Frameworks and Libraries (to name a few)
+
+* Web: Flask (Jinja2, Werkzeug, and various extensions), Java sockets
+* Gfx: SDL, Qt, Swing
+
 ---
 
-##Past work experience
+##Past Work Experience
 
 ###EMC (May - August 2012)
 ####Software Intern
 
-Worked with virtualization technology, Perl, and Python. Helped to set up and manage dozens of virtual machines as a test bed, and wrote code that shipped with the product.
+Worked with virtualization technology, Perl, and Python. Helped to set up and manage dozens of virtual machines as a test bed, and wrote code that shipped with a major product.
 
 ###Chapman University (June - August 2010)
 ####Research Intern
@@ -54,3 +59,4 @@ Worked as a teacher's assistant for a programming club in high school as a sopho
 
 ##References
 
+References are available upon request.
