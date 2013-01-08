@@ -5,11 +5,19 @@ description: The resume of Alex Bogart.
 ---
 
 #Alex Bogart
-###Computer Scientist and Curious Person
+###Computer Scientist and Software Engineer
 ####Cell Phone: (949)-422-7924
 ####Email: alex@bitlimn.com
 ####4 Shasta, Irvine CA 92612
-####Persuing B.S. in Computer Engineering at University of Southern California (expected graduation date 2015)
+
+---
+
+##Education
+####Pursuing B.S. in Computer Engineering and Computer Science (CECS) at University of Southern California (expected graduation date 2015)
+
+###Academic Performance
+
+I have maintained A level grades in all Engineering and Computer Science courses. Grades for the last two semesters have been a 3.85 and a 3.74, with a 3.6 overall.
 
 ---
 
@@ -59,4 +67,6 @@ Worked as a teacher's assistant for a programming club in high school as a sopho
 
 ##References
 
-References are available upon request.
+###Ellis Horowitz
+####Associate Chair of Computer Science, USC
+####Email: horowitz@usc.edu
