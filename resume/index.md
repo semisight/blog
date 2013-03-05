@@ -13,34 +13,42 @@ description: The resume of Alex Bogart.
 ---
 
 ##Education
-####Pursuing B.S. in Computer Engineering and Computer Science (CECS) at University of Southern California (expected graduation date 2015)
+
+Pursuing B.S. in Computer Engineering and Computer Science (CECS) at University of Southern California (expected graduation date 2015)
 
 ###Academic Performance
 
 I have maintained A level grades in all Engineering and Computer Science courses. Grades for the last two semesters have been a 3.85 and a 3.74, with a 3.6 overall.
 
+###Classes of Importance
+
+* **CS200** (A) - Worked sucessfully in an 11 person team on a project using version control. Project totaled around 10K sloc by the end.
+* **EE201** (A) - Worked in Verilog to program an FPGA to play a reduced version of Battleship.
+
 ---
 
 ##Languages and Tools
+
+Ask me if something isn't here that I need to know because I may have some experience with it. I'm only listing tools that I have a certain level of familiarity with.
 
 ###Languages
 
 * C++
 * C
-* Python
-* Perl
-* Java
 * Clojure
+* Java
+* Perl
+* Python
 
 ###Tools and Technologies
 
 * GIT
 * Vim
-* \*nix (including OS X)
+* \*nix
 * OpenGL
-* VmWare vSphere and associated technologies (ESXi, &c.)
+* VmWare vSphere and associated technologies (ESXi, &amp;c.)
 
-###Frameworks and Libraries (to name a few)
+###Frameworks and Libraries
 
 * Web: Flask (Jinja2, Werkzeug, and various extensions), Java sockets
 * Gfx: SDL, Qt, Swing
@@ -49,13 +57,11 @@ I have maintained A level grades in all Engineering and Computer Science courses
 
 ##Past Work Experience
 
-###EMC (May - August 2012)
-####Software Intern
+###EMC (May - August 2012) <small>Software Intern</small>
 
 Worked with virtualization technology, Perl, and Python. Helped to set up and manage dozens of virtual machines as a test bed, and wrote code that shipped with a major product.
 
-###Chapman University (June - August 2010)
-####Research Intern
+###Chapman University (June - August 2010) <small>Research Intern</small>
 
 Worked in the Experimental Economics Institute at Chapman University 
 
@@ -68,5 +74,6 @@ Worked as a teacher's assistant for a programming club in high school as a sopho
 ##References
 
 ###Ellis Horowitz
-####Associate Chair of Computer Science, USC
-####Email: horowitz@usc.edu
+
+Associate Chair of Computer Science, USC<br>
+Email: horowitz@usc.edu
