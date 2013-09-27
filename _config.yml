@@ -1,7 +1,8 @@
-auto: false
 pygments: true
 permalink: /:categories/:title
 
 description: The personal website of Alex Bogart.
 
-exclude: sass, Procfile, config.rb, deploy
+exclude: [sass, Procfile, config.rb, deploy]
+
+port: 5000

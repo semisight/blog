@@ -5,10 +5,13 @@ description: The resume of Alex Bogart.
 ---
 
 #Alex Bogart
-###Computer Scientist and Software Engineer
-####Cell Phone: (949)-422-7924
-####Email: alex@bitlimn.com
-####4 Shasta, Irvine CA 92612
+##Computer Scientist and Software Engineer
+
+<small>
+Cell Phone: (949)-422-7924<br>
+Email: alex@bitlimn.com<br>
+4 Shasta, Irvine CA 92612
+</small>
 
 ---
 
@@ -18,11 +21,12 @@ Pursuing B.S. in Computer Engineering and Computer Science (CECS) at University 
 
 ###Academic Performance
 
-I have maintained A level grades in all Engineering and Computer Science courses. Grades for the last two semesters have been a 3.85 and a 3.74, with a 3.6 overall.
+I have maintained A level grades in all Engineering and Computer Science courses. Grades for the last two semesters have been a 3.88 and a 3.85, with a 3.68 overall.
 
 ###Classes of Importance
 
-* **CS200** (A) - Worked sucessfully in an 11 person team on a project using version control. Project totaled around 10K sloc by the end.
+* **CS200** (A) - Worked successfully in an 11 person team on a project using version control. Project totaled around 10K sloc by the end.
+* **CS201** (A-) - Worked on a 5 person team to write an efficient multi-threaded factory simulation program.
 * **EE201** (A) - Worked in Verilog to program an FPGA to play a reduced version of Battleship.
 
 ---
@@ -33,10 +37,11 @@ Ask me if something isn't here that I need to know because I may have some exper
 
 ###Languages
 
-* C++
 * C
+* C++
 * Clojure
 * Java
+* Javascript
 * Perl
 * Python
 
@@ -50,12 +55,16 @@ Ask me if something isn't here that I need to know because I may have some exper
 
 ###Frameworks and Libraries
 
-* Web: Flask (Jinja2, Werkzeug, and various extensions), Java sockets
+* Web: Flask (Jinja2, Werkzeug, and various extensions), Java sockets, node.js
 * Gfx: SDL, Qt, Swing
 
 ---
 
 ##Past Work Experience
+
+###EMC (May - August 2013) <small>Software Intern</small>
+
+Worked again with virtualization technology. Assisted in the migration of a large codebase from Git to Perforce, and wrote the foundations for a server REST API.
 
 ###EMC (May - August 2012) <small>Software Intern</small>
 
@@ -63,7 +72,7 @@ Worked with virtualization technology, Perl, and Python. Helped to set up and ma
 
 ###Chapman University (June - August 2010) <small>Research Intern</small>
 
-Worked in the Experimental Economics Institute at Chapman University 
+Worked in the Experimental Economics Institute at Chapman University, 
 
 ###Teacher's Assistant
 
